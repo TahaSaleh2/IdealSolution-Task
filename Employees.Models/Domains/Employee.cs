@@ -17,6 +17,7 @@ namespace Employees.Models.Domains
         public string LName { get; set; }
         [Required]
         public string Email { get; set; }
+        [Required]
         public string JobTitle { get; set; }
         public decimal? Salary { get; set; }
         public DateTime? BirthDay { get; set; }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace Employees.Models.ViewModels
         public string LName { get; set; }
         [Required(ErrorMessage = "Email is required")]
         public string Email { get; set; }
+        [Required(ErrorMessage = "Job Title is required")]
         public string JobTitle { get; set; }
         public decimal? Salary { get; set; }
         public DateTime? BirthDay { get; set; }
