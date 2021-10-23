@@ -1,0 +1,224 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "jquery@3.6.0",
+      "destination": "wwwroot/lib/jquery/",
+      "files": [
+        "jquery.min.js",
+        "jquery.js"
+      ]
+    },
+    {
+      "library": "jqueryui@1.12.1",
+      "destination": "wwwroot/lib/jqueryui/",
+      "files": [
+        "jquery-ui.min.js",
+        "jquery-ui.css",
+        "jquery-ui.js",
+        "jquery-ui.min.css",
+        "images/ui-icons_444444_256x240.png",
+        "images/ui-icons_555555_256x240.png",
+        "images/ui-icons_777620_256x240.png",
+        "images/ui-icons_777777_256x240.png",
+        "images/ui-icons_cc0000_256x240.png",
+        "images/ui-icons_ffffff_256x240.png"
+      ]
+    },
+    {
+      "library": "twitter-bootstrap@4.6.0",
+      "destination": "wwwroot/lib/bootstrap/",
+      "files": [
+        "js/bootstrap.min.js",
+        "css/bootstrap.css",
+        "css/bootstrap.min.css",
+        "css/bootstrap.css.map",
+        "css/bootstrap.min.css.map",
+        "js/bootstrap.js",
+        "js/bootstrap.min.js.map",
+        "js/bootstrap.js.map",
+        "js/bootstrap.bundle.js",
+        "js/bootstrap.bundle.js.map",
+        "js/bootstrap.bundle.min.js",
+        "js/bootstrap.bundle.min.js.map"
+      ]
+    },
+    {
+      "library": "overlayscrollbars@1.13.1",
+      "destination": "wwwroot/lib/overlayscrollbars/"
+    },
+    {
+      "library": "admin-lte@3.0.5",
+      "destination": "wwwroot/lib/admin-lte/",
+      "files": [
+        "js/adminlte.min.js",
+        "js/adminlte.js",
+        "css/adminlte.css",
+        "css/adminlte.min.css",
+        "css/adminlte.css.map",
+        "css/adminlte.min.css.map",
+        "js/adminlte.js.map",
+        "js/adminlte.min.js.map"
+      ]
+    },
+    {
+      "library": "font-awesome@5.15.2",
+      "destination": "wwwroot/lib/font-awesome/",
+      "files": [
+        "css/all.min.css",
+        "css/all.css",
+        "js/all.js",
+        "js/all.min.js",
+        "webfonts/fa-brands-400.eot",
+        "webfonts/fa-brands-400.svg",
+        "webfonts/fa-brands-400.ttf",
+        "webfonts/fa-brands-400.woff",
+        "webfonts/fa-brands-400.woff2",
+        "webfonts/fa-regular-400.eot",
+        "webfonts/fa-regular-400.svg",
+        "webfonts/fa-regular-400.ttf",
+        "webfonts/fa-regular-400.woff",
+        "webfonts/fa-regular-400.woff2",
+        "webfonts/fa-solid-900.eot",
+        "webfonts/fa-solid-900.svg",
+        "webfonts/fa-solid-900.ttf",
+        "webfonts/fa-solid-900.woff",
+        "webfonts/fa-solid-900.woff2",
+        "css/fontawesome.min.css",
+        "css/fontawesome.css"
+      ]
+    },
+    {
+      "library": "toastr.js@2.1.4",
+      "destination": "wwwroot/lib/toastr.js/"
+    },
+    {
+      "library": "jquery-validation-unobtrusive@3.2.12",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
+    },
+    {
+      "library": "jquery-validate@1.19.2",
+      "destination": "wwwroot/lib/jquery-validate/",
+      "files": [
+        "jquery.validate.min.js",
+        "jquery.validate.js"
+      ]
+    },
+    {
+      "library": "jquery-ajax-unobtrusive@3.2.6",
+      "destination": "wwwroot/lib/jquery-ajax-unobtrusive/"
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "datatables.net@1.10.20",
+      "destination": "wwwroot/lib/datatables",
+      "files": [
+        "js/jquery.dataTables.js",
+        "js/jquery.dataTables.min.js"
+      ]
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "datatables.net-bs4@1.10.20",
+      "destination": "wwwroot/lib/datatables",
+      "files": [
+        "css/dataTables.bootstrap4.css",
+        "css/dataTables.bootstrap4.min.css",
+        "js/dataTables.bootstrap4.js",
+        "js/dataTables.bootstrap4.min.js"
+      ]
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "datatables.net-responsive@2.2.3",
+      "destination": "wwwroot/lib/datatables",
+      "files": [
+        "js/dataTables.responsive.js",
+        "js/dataTables.responsive.min.js"
+      ]
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "datatables.net-responsive-bs4@2.2.3",
+      "destination": "wwwroot/lib/datatables",
+      "files": [
+        "css/responsive.bootstrap4.css",
+        "css/responsive.bootstrap4.min.css",
+        "js/responsive.bootstrap4.js",
+        "js/responsive.bootstrap4.min.js"
+      ]
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "datatables.net-buttons-bs4@1.6.1",
+      "destination": "wwwroot/lib/datatables",
+      "files": [
+        "css/buttons.bootstrap4.css",
+        "css/buttons.bootstrap4.min.css",
+        "js/buttons.bootstrap4.js",
+        "js/buttons.bootstrap4.min.js"
+      ]
+    },
+    {
+      "library": "datatables@1.10.20",
+      "destination": "wwwroot/lib/datatables/",
+      "files": [
+        "css/jquery.dataTables.css",
+        "css/jquery.dataTables.min.css",
+        "images/sort_asc.png",
+        "images/sort_asc_disabled.png",
+        "images/sort_both.png",
+        "images/sort_desc.png",
+        "images/sort_desc_disabled.png"
+      ]
+    },
+    {
+      "library": "bootstrap-rtl@3.4.0",
+      "destination": "wwwroot/lib/bootstrap-rtl/",
+      "files": [
+        "css/bootstrap-rtl.min.css",
+        "css/bootstrap-rtl.css.map",
+        "css/bootstrap-rtl.css"
+      ]
+    },
+    {
+      "provider": "jsdelivr",
+      "library": "famfamfam-flags@1.0.0",
+      "destination": "wwwroot/lib/famfamfam-flags/",
+      "files": [
+        "dist/png/eg.png",
+        "dist/png/us.png",
+        "dist/sprite/famfamfam-flags.css",
+        "dist/sprite/famfamfam-flags.min.css",
+        "dist/sprite/famfamfam-flags.png",
+        "dist/gif/eg.gif",
+        "dist/gif/us.gif"
+      ]
+    },
+    {
+      "library": "icheck-bootstrap@3.0.1",
+      "destination": "wwwroot/lib/icheck-bootstrap/"
+    },
+    {
+      "library": "select2@4.0.13",
+      "destination": "wwwroot/lib/select2/",
+      "files": [
+        "js/select2.min.js",
+        "js/select2.js",
+        "js/select2.full.min.js",
+        "js/select2.full.js",
+        "js/i18n/ar.js",
+        "js/i18n/ar.min.js",
+        "js/i18n/en.js",
+        "js/i18n/en.min.js",
+        "css/select2.css",
+        "css/select2.min.css"
+      ]
+    },
+    {
+      "library": "css-element-queries@1.2.3",
+      "destination": "wwwroot/lib/css-element-queries/"
+    }
+  ]
+}

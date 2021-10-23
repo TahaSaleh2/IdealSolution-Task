@@ -1,0 +1,14 @@
+﻿@model EmployeeVM
+<form enctype="multipart/form-data" asp-action="Update" asp-controller="Employee" method="post"
+      data-ajax="true" data-ajax-method="post" data-ajax-mode="replace"
+      data-ajax-loading="#loader" data-ajax-success="EditedSuccess">
+
+    @await Html.PartialAsync("CreateOrEditEmployee", Model)
+
+</form>
+
+
+
+<script type="text/javascript" language=javascript>
+    $.validator.unobtrusive.parse(document);
+</script>

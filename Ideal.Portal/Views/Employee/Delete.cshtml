@@ -1,0 +1,18 @@
+﻿@model EmployeeVM
+
+<form enctype="multipart/form-data" asp-action="Delete" asp-controller="Employee" data-ajax="true"
+      data-ajax-method="post" data-ajax-mode="replace"
+      data-ajax-loading="#loader" data-ajax-success="DeletedSuccess">
+    <input asp-for="Id" type="hidden" value="@Model.Id" />
+
+    <p>
+        Are you Sure for deleting Employee '<span class="text-bold text-primary">@Model.FName</span>' ?
+    </p>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+    </div>
+</form>
+
+
+

@@ -1,0 +1,144 @@
+﻿*{
+    direction:rtl;
+    text-align:right;
+}
+.sidebar-menu li a .fa-angle-left,
+.sidebar-menu li .label, .sidebar-menu li .badge {
+    margin-top: -15px !important;
+}
+
+.layout-fixed .main-sidebar {
+    left: auto;
+}
+
+.brand-link .brand-image {
+    float: right;
+}
+
+.content-wrapper, .main-header, .main-footer {
+    margin-left: auto !important;
+    margin-right: 250px;
+}
+
+.sidebar-mini.sidebar-collapse .content-wrapper,
+.sidebar-mini.sidebar-collapse .main-footer,
+.sidebar-mini.sidebar-collapse .main-header {
+    margin-left: auto !important;
+    margin-right: 4.6rem !important;
+}
+
+ul.navbar-nav.ml-auto {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+.main-header ul {
+    padding-right: 0px;
+}
+
+div.dataTables_wrapper {
+    direction: rtl;
+}
+
+/* Ensure that the demo table scrolls */
+th, td {
+    white-space: nowrap;
+    text-align: right;
+}
+
+
+.dataTables_info {
+    float: right;
+}
+
+.dataTables_paginate {
+    float: left;
+    text-align: left;
+}
+
+.dataTables_wrapper div:nth-child(1) div:nth-child(1) {
+    display: flex;
+}
+
+.dataTables_wrapper div:nth-child(1) div:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dataTables_wrapper div:nth-child(3) div:nth-child(1) {
+    display: flex;
+}
+
+.dataTables_wrapper div:nth-child(3) div:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+table.table-bordered.dataTable th:last-child,
+table.table-bordered.dataTable th:last-child,
+table.table-bordered.dataTable td:last-child,
+table.table-bordered.dataTable td:last-child {
+    border-left-width: 0;
+    border-right-width: 1px;
+}
+
+.nav-sidebar .menu-open > .nav-link i.right {
+    right: auto;
+    left: 1.2rem;
+}
+
+.nav-sidebar .nav-link > .right:nth-child(2), .nav-sidebar .nav-link > p > .right:nth-child(2) {
+    right: auto;
+    left: 1.2rem;
+}
+.nav-pills > li + li {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.modal-header .close {
+    margin-left: 0;
+}
+
+button[class*="float-sm-right"] {
+    float: left !important;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar-mini.sidebar-collapse .main-sidebar,
+    .sidebar-mini.sidebar-collapse .main-sidebar::before {
+        margin-right: 0;
+        width: 0rem;
+    }
+
+    .sidebar-mini.sidebar-collapse .content-wrapper,
+    .sidebar-mini.sidebar-collapse .main-footer,
+    .sidebar-mini.sidebar-collapse .main-header {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    body:not(.sidebar-mini-md) .content-wrapper,
+    body:not(.sidebar-mini-md) .content-wrapper::before,
+    body:not(.sidebar-mini-md) .main-footer,
+    body:not(.sidebar-mini-md) .main-footer::before,
+    body:not(.sidebar-mini-md) .main-header,
+    body:not(.sidebar-mini-md) .main-header::before {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .float-sm-right {
+        float: left !important;
+    }
+}
+@media (min-width: 768px) {
+    body:not(.sidebar-mini-md) .content-wrapper, 
+    body:not(.sidebar-mini-md) .main-footer,
+    body:not(.sidebar-mini-md) .main-header {
+        transition: margin-right .3s ease-in-out;
+        margin-right: 250px;
+    }
+
+}

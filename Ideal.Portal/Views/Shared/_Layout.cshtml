@@ -1,0 +1,32 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="~/Images/favicon.ico">
+    <title>@ViewBag.Title</title>
+    @await Html.PartialAsync("_Styles")
+    @RenderSection("styles", required: false)
+
+</head>
+<body class="sidebar-mini layout-fixed" style="height: auto;">
+    <div class="wrapper">
+        @await Html.PartialAsync("_Navbar")
+
+        @await Html.PartialAsync("_Sidebar")
+
+        <div class="content-wrapper">
+            @RenderBody()
+        </div>
+
+        @await Html.PartialAsync("_Footer")
+
+    </div>
+
+    @await Html.PartialAsync("_Scripts")
+
+    @RenderSection("scripts", required: false)
+
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+{
+  "Routes": [
+    //Employee.Microservice
+    {
+      "DownstreamPathTemplate": "/api/employee/getall",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 33944
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/employee/getall",
+      "UpstreamHttpMethod": [ "GET","POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/employee/get/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 33944
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/employee/get/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/employee/Insert",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 33944
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/employee/Insert",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/employee/Update",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 33944
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/employee/Update",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/employee/delete/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 33944
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/employee/delete/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    //Task.Microservice
+    {
+      "DownstreamPathTemplate": "/api/Task/getall",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 36067
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Task/getall",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Task/get/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 36067
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Task/get/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Task/Insert",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 36067
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Task/Insert",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Task/Update",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 36067
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Task/Update",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Task/delete/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 36067
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Task/delete/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:46923"
+  }
+
+}  

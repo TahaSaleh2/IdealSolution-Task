@@ -1,0 +1,64 @@
+﻿@model Employees.Models.ViewModels.ListResultVM<EmployeeVM>
+<div>
+
+    <table class="table table-bordered" id="resultTable">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <td>Email</td>
+                <td>Job Title</td>
+                <td>Salary</td>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Items)
+            {
+            <tr>
+                <td>@item.FName</td>
+                <td>@item.LName</td>
+                <td>@item.Email</td>
+                <td>@item.JobTitle</td>
+                <td>@item.Salary</td>
+                <td>
+                    <a class="btn btn-sm bg-secondary m-1" asp-controller="Employee" asp-action="Update"
+                       asp-route-id="@item.Id" data-ajax="true" data-ajax-loading="#loader"
+                       data-ajax-mode="replace" data-ajax-success="toggleEditModal" data-ajax-update="#editBody">
+                        <i class="fas fa-pencil-alt"></i> Edit
+                    </a>
+                    <a class="btn btn-sm bg-danger m-1" asp-controller="Employee" asp-action="Delete"
+                       asp-route-id="@item.Id" data-ajax="true" data-ajax-loading="#loader"
+                       data-ajax-mode="replace" data-ajax-success="toggleDeleteModal" data-ajax-update="#deleteBody">
+                        <i class="fas fa-trash"></i> Delete
+                    </a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+
+    <nav aria-label="Page navigation" id="pagging">
+        <ul class="pagination justify-content-end pb-2">
+            <li class="page-item @(Model.PageNumber == 0? "disabled":"")">
+                <a class="page-link" aria-label="Previous" asp-controller="Product" asp-action="ProductList" asp-route-pageNumber="@(Model.PageNumber-1)"
+                   data-ajax="true" data-ajax-loading="#loader" data-ajax-update="#tblResult" data-ajax-mode="replace">
+                    Previous
+                </a>
+            </li>
+            @for (int i = 0; i < Model.PagesCount; i++)
+            {
+                <li class='page-item @(Model.PageNumber == i? "active":"")'>
+                    <a class="page-link" asp-controller="Product" asp-action="ProductList" asp-route-pageNumber="@i"
+                       data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#tblResult">@(i+1)</a>
+                </li>
+            }
+            <li class="page-item @(Model.PageNumber == Model.PagesCount-1? "disabled":"")">
+                <a class="page-link" aria-label="Next" asp-controller="Product" asp-action="ProductList" asp-route-pageNumber="@(Model.PageNumber+1)"
+                   data-ajax="true" data-ajax-loading="#loader" data-ajax-update="#tblResult" data-ajax-mode="replace">
+                    Next
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
